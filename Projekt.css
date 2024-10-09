@@ -1,12 +1,33 @@
-.container{
-
+body{
+    background-color: #f5f0f6;
 }
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(1fr, 5);
+    grid-template-rows: 100px 50px 1fr;
+    grid-template-areas: 
+    "header header header header header"
+    "nav nav nav nav nav"
+    "table table fact fact fact"
+  /*   "h2 h2 h3 h3 h3"
+    "table table fact fact fact"
+    "table table fact fact fact"; */
+}
+
+.navbar{
+    grid-area: nav;
+}
+
 .navbar ul{
     list-style-type: none;
     background-color: #002626;
     padding: 0;
     margin: 0;
+    overflow: hidden;
+    grid-area: nav;
 }
+
 .navbar a{
     color: #ccc;
     text-decoration: none;
@@ -14,6 +35,52 @@
     display: block;
     text-align: center;
 }
+
 .navbar a:hover{
-    background-color: ;
+    background-color: #001313;
+    transition: 0.5s;
+}
+
+header{
+    grid-area: header;
+}
+
+h1{
+    text-align: center;
+    grid-area: header;
+}
+
+.navbar li{
+    float: left;
+}
+
+table{
+    border-spacing: 0;
+    width: 40%;
+    height: 100%;
+    margin-left: 5%;
+    margin-top:8%;
+    grid-area: table;
+}
+
+td, th{
+    border: 1px solid rgb(57, 42, 42);
+}
+
+tbody{
+    text-align: center;
+}
+
+thead{
+    background-color: #386fa4;
+    color: rgb(217, 228, 237);
+}
+
+.section-tables{
+    grid-area: table;
+}
+
+.facts{
+    grid-area: fact;
+    font-size: 150%;
 }
