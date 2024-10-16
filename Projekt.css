@@ -4,7 +4,7 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 100px 50px 1fr;
     width: 98vw;
     height: 100vh;
@@ -45,17 +45,14 @@ body{
 
 header{
     grid-area: header;
-    background-color: #e5d9e8;
     text-align: center;
     border-radius: 10px;
     margin: 10px;
 }
 
 h1{
-    color: #a193a2;
+    color: #819382;
 }
-
-
 
 .navbar li{
     float: left;
@@ -87,6 +84,10 @@ thead{
     grid-area: table;
 }
 
+h2{
+    margin-left: 20%;
+}
+
 .facts{
     grid-area: fact;
     font-size: 150%;
@@ -101,4 +102,12 @@ h3{
     border: 2px solid #242743;
     border-radius: 4px;
     padding: 6px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #e0e0f8;
+}
+
+tbody tr:nth-child(even){
+    background-color: #e6d9f0;
 }
