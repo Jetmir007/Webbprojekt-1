@@ -4,12 +4,12 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: repeat(1fr, 5);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px 50px 1fr;
     width: 98vw;
     height: 100vh;
     grid-template-areas: 
-    "header header header header header"
+    ". . header . ."
     "nav nav nav nav nav"
     "table table fact fact fact";
   /*   "h2 h2 h3 h3 h3"
@@ -45,12 +45,17 @@ body{
 
 header{
     grid-area: header;
+    background-color: #e5d9e8;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 h1{
-    text-align: center;
-    grid-area: header;
+    color: #a193a2;
 }
+
+
 
 .navbar li{
     float: left;
