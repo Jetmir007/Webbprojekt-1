@@ -112,3 +112,26 @@ h3{
     background-color: #e6d9f0;
 }
 
+.South tbody tr:nth-child(odd){
+    background-color: #d8e0e9;
+}
+
+.South tbody tr:nth-child(even){
+    background-color: #c8c7e7;
+}
+
+.East tbody tr:nth-child(odd){
+    background-color: #c3a9c6;
+}
+
+.East tbody tr:nth-child(even){
+    background-color: #a989b4;
+}
+
+.West tbody tr:nth-child(odd){
+    background-color: #e9dbfc;
+}
+
+.West tbody tr:nth-child(even){
+    background-color: #cbacea;
+}
