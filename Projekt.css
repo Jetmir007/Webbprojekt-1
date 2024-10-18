@@ -104,10 +104,11 @@ h3{
     padding: 6px;
 }
 
-tbody tr:nth-child(odd){
+.North tbody tr:nth-child(odd){
     background-color: #e0e0f8;
 }
 
-tbody tr:nth-child(even){
+.North tbody tr:nth-child(even){
     background-color: #e6d9f0;
 }
+
