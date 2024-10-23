@@ -7,14 +7,11 @@ body{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 100px 50px 1fr;
     width: 98vw;
-    height: 100vh;
+    height: 100vh;  
     grid-template-areas: 
     ". . header . ."
     "nav nav nav nav nav"
     "table table fact fact fact";
-  /*   "h2 h2 h3 h3 h3"
-    "table table fact fact fact"
-    "table table fact fact fact"; */
 }
 
 .navbar{
@@ -39,7 +36,7 @@ body{
 }
 
 .navbar a:hover{
-    background-color: #001313;
+    background-color: #000;
     transition: 0.5s;
 }
 
@@ -51,7 +48,7 @@ header{
 }
 
 h1{
-    color: #819382;
+    color: #666468;
 }
 
 .navbar li{
