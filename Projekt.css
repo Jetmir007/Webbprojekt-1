@@ -6,8 +6,6 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 100px 50px 1fr;
-    width: 98vw;
-    height: 100vh;  
     grid-template-areas: 
     ". . header . ."
     "nav nav nav nav nav"
@@ -36,7 +34,7 @@ body{
 }
 
 .navbar a:hover{
-    background-color: #000;
+    background-color: #444;
     transition: 0.5s;
 }
 
